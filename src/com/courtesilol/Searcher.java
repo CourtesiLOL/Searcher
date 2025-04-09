@@ -1,4 +1,4 @@
-package com.courtesilol.searcher;
+package com.courtesilol;
 
 import java.io.File;
 
@@ -38,7 +38,7 @@ public class Searcher {
 		
 		String[] itemList = parentPath.list();
 		
-		if(itemList.length <= 0) {
+		if(itemList == null || itemList.length <= 0) {
 			return;
 		}
 		
